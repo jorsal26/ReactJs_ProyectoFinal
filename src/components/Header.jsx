@@ -2,10 +2,8 @@ import NavBar from "./NavBar"
 
 function Header() {
   return (
-    <header>
-      <img className="logo" src="/logo.svg" alt="logo" />
+    <header className="flex justify-between p-4">
       <NavBar isHeader={true} />
-      <h1>Gestión de Pedidos</h1>
     </header>
   )
 }

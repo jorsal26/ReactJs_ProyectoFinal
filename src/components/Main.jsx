@@ -1,10 +1,20 @@
+import ItemListContainer from "./ItemListContainer.jsx"
+import Carrito from "./CartWidget.jsx"
+import { Routes, Route } from "react-router-dom"
+import ItemDetailContainer from "./ItemDetailContainer.jsx"
+import Nosotros from "./Nosotros.jsx"
 
 function Main() {
   return (
-    <main>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, voluptatibus facere, harum neque molestiae consectetur maxime ipsa eaque aperiam omnis adipisci quam accusamus? Optio esse distinctio placeat neque quam iusto.</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere natus esse numquam nihil dignissimos eligendi, vel saepe pariatur aut voluptatum, ut excepturi eius doloremque exercitationem dolores cumque? Odit, saepe tempore?</p>
-       
+    <main className="p-4 bg-[rgba(255,255,255,0.5)] grow">
+      <Routes>
+        <Route path="/" element={<h1 className="text-3xl font-bold">Inicio</h1>} />
+        <Route path="/productos" element={<ItemListContainer />} />
+        <Route path="/productos/item/:id" element={<ItemDetailContainer />} />
+        <Route path="/productos/:categoria" element={<ItemListContainer />} />
+        <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/carrito" element={<h1 className="text-3xl font-bold">Carrito</h1>} />
+      </Routes>
     </main>
   )
 }

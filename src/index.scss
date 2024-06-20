@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 $bgPrimary:#242424;
 
 :root {
@@ -16,6 +20,10 @@ $bgPrimary:#242424;
 }
 
 .btn {
+  @apply inline-block px-4 py-2 font-semibold text-white bg-blue-500 rounded cursor-pointer text-center transition duration-200 ease-in-out;
+}
+
+.btn2 {
   display: inline-block;
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -28,12 +36,20 @@ $bgPrimary:#242424;
   cursor: pointer;
   user-select: none;
   transition: background-color 0.2s, color 0.2s;
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(39, 5, 233, 0.08);
+}
+
+.grid-flow{
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .img {
   max-width: 100%;
   height: auto;
+}
+
+a.active{
+  @apply text-blue-500
 }
 
 .carrito {
@@ -54,4 +70,21 @@ $bgPrimary:#242424;
 
 .logo:hover {
   transform: scale(1.1);
+}
+
+.menu-link {
+  text-decoration: none;
+  color: rgb(230, 222, 222);
+  font-size: 1.2rem;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
 }
