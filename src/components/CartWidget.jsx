@@ -1,13 +1,17 @@
 import cart from '/cart.svg'
-import { useParams } from "react-router-dom"
+import { useContext, useState } from "react"
+import { CartContext } from "../context/CartContext"
+import { Link } from "react-router-dom"
 
 function CartWidget() {
-    const params = useParams()
+    const { cantidadEnCarrito } = useContext(CartContext);
+
     return (
-        <>
-        <img className = "carrito" src={cart} alt="carrito" />0
-        </>
+      <div>
+          <Link to="/carrito"><img className = "menu-link carrito" src={cart} alt="carrito" /><span className="numerito"> {cantidadEnCarrito()}</span></Link>
+      </div>
     )
+  
 }
 
 export default CartWidget
