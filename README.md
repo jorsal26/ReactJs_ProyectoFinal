@@ -17,6 +17,9 @@ Este proyecto es una Tienda Online desarrollada con React.js. Utiliza Vite.js pa
 - React Hook Form
 - Firebase
 
+## Estructura del Proyecto
+Video de muestra de funcionalidad del sitio esta en la carpeta public con el nombre de VideoProyectoFinal.gif 
+
 ## Funcionalidades
 
 La tienda en línea proporciona las siguientes funcionalidades:
