@@ -20,7 +20,7 @@ function ItemDetail({item, titulo}) {
         <section className="grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
             <article className="p-4 text-black transition-all bg-white rounded-md shadow-xl">
                 <h1 className="text-2xl  text-blue-800 font-bold">{item.nombre}</h1>
-                <img src={`/src/images/${item.imagen}`} alt={item.nombre} />
+                <img src={`./src/images/${item.imagen}`} alt={item.nombre} />
                 <h2 className="text-2xl font-bold">{item.descripcion}</h2>
                 <h3 className="text-2xl">Categoria: {(item.categoria)}</h3>
                 <p className="text-2xl text-green-600">${item.precio}</p>
