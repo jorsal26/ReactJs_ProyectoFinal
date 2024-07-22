@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
 
 REACT JS
@@ -54,3 +55,5 @@ Puedes visualizar la aplicación desplegada aquí.
 ---
 
 **Tienda Online con React.js** - Desarrollado por JORGE LUIS SALINAS
+=======
+# ReactJs_ProyectoFinal
